@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- top container -->
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./images/weather-forecast.gif" alt="logo" height="50">
+                <h3>WeatherWise</h3>
+            </div>
+            <div class="search">
+                <input type="text" id="textInput" placeholder="search for a city">
+                <img src="./images/search.png" class="search-icon nav-btn" alt="search" height="35">
+                <img src="./images/gps.png" class="gps-icon nav-btn" alt="GPS" height="35">
+            </div>
+            <div class="support">
+                <a href="#">
+                    <p>created using</p>
+                    <h2>OpenWeather</h2>
+                </a>
+            </div>
+        </div>
+
+        <!-- main container -->
+
+        <div class="main">
+            <div class="card-1">
+                <div class="main-icon">
+                    <img src="./images/wind speed.gif" alt="weather" class="current-weather-icon">
+                </div>
+
+                <div class="current-temperature">28° C</div>
+                <div class="current-weather-condition">Broken Clouds</div>
+                <div class="line-divider"></div>
+                <div class="time-place">
+                    <div class="location">Hyderabad</div>
+                    <div>
+                        <div class="current-date">27 Jan</div>
+                        <div id="current-day">Saturday</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-2">
+                <div class="humidity card-2-div">
+                    <img src="./images/humidity.gif" alt="humidity" height="55">
+                    <div class="card-2-text">
+                        <h3>Humidity</h3>
+                        <div class="current-humidity value">87%</div>
+                    </div>
+                </div>
+                <div class="card-2-div">
+                    <img src="./images/windy.gif" alt="wind-speed" height="55" class="icon">
+                    <div class="card-2-text">
+                        <h3>Wind Speed</h3>
+                        <div class="current-wind-speed value">22 km/hr</div>
+                    </div>
+                </div>
+                <div class="card-2-div">
+                    <img src="./images/sunrise.gif" alt="sunrise" height="55">
+                    <div class="card-2-text">
+                        <h3>Sunrise</h3>
+                        <div class="sunrise value">6:20</div>
+                    </div>
+                </div>
+                <div class="card-2-div">
+                    <img src="./images/sunset.gif" alt="sunset" height="55">
+                    <div class="card-2-text">
+                        <h3>Sunset</h3>
+                        <div class="sunset value">18:20</div>
+                    </div>
+                </div>
+                <div class="air card-2-div">
+                    <img src="./images/air.gif" alt="air-quality" height="75">
+                    <div class="card-2-text">
+                        <h3>Air Quality Index:</h3>
+                        <span class="air-quality-index value">125 - </span>
+                        <span class="air-quality-status value">Moderate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom container -->
+
+        <div class="footer">
+            <div class="card-3">
+                <div class="days today">
+                    <p>sunday</p>
+                    <img src="./images/sunny.gif" alt="sunny" height="50">
+                    <h3>28° C</h3>
+                </div>
+                <div class="days day-1">
+                    <p>Monday</p>
+                    <img src="./images/sunny.gif" alt="sunny" height="50">
+                    <h3>25° C</h3>
+                </div>
+                <!-- <div class="days day-3">
+                    <p>sunday</p>
+                    <img src="./images/cloudy.gif" alt="sunny" height="50">
+                    <h3>28° C</h3>
+                </div> -->
+                <div class="days day-2">
+                    <p>Tuesday</p>
+                    <img src="./images/rain.gif" alt="sunny" height="50">
+                    <h3>26° C</h3>
+                </div>
+                <div class="days day-3">
+                    <p>Wednesday</p>
+                    <img src="./images/wind.gif" alt="sunny" height="50">
+                    <h3>30° C</h3>
+                </div>
+                <div class="days day-4">
+                    <p>Thursday</p>
+                    <img src="./images/twister.gif" alt="sunny" height="50">
+                    <h3>28° C</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

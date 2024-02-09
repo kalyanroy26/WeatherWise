@@ -1,0 +1,124 @@
+@media screen and (max-width: 700px) {
+	body {
+		overflow: hidden;
+	}
+
+	.container {
+		position: static;
+		border-radius: 0;
+		overflow: auto;
+		height: 100vh;
+		width: 100%;
+		align-items: center;
+	}
+
+	.nav-container {
+		flex-direction: column;
+		align-items: center;
+		height: 400px;
+	}
+
+	.nav-container .logo {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+
+	.nav-container .search {
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+		height: 80px;
+	}
+
+	input[type="text"] {
+		width: 75%;
+		position: absolute;
+		top: 15px;
+		left: 12px;
+	}
+
+	.search-icon {
+		top: 25px;
+		right: 25%;
+	}
+
+	.gps-icon {
+		top: 25%;
+	}
+
+	.nav-container .support {
+		display: none;
+	}
+
+	/*  main card starts here */
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+		gap: 1.5rem;
+		margin: 0;
+	}
+
+	.card-1 {
+		width: 100%;
+	}
+
+	.time-place {
+		gap: 50px;
+	}
+
+	.card-2 {
+		gap: 12px;
+		align-items: center;
+	}
+
+	.card-2-div {
+		padding: 10px;
+		height: 150px;
+		width: 165px;
+		flex-direction: column;
+	}
+
+	.card-2-div h3 {
+		font-size: 1rem;
+	}
+
+	.card-2-text .value {
+		font-size: 1.3rem;
+	}
+
+	.card-2-div img {
+		height: 45px;
+	}
+
+	.air {
+		flex-direction: row;
+		width: 100%;
+		height: 120px;
+	}
+
+	.footer {
+		width: 90%;
+		margin-bottom: 50px;
+    margin-top: 0;
+	}
+
+	.card-3 {
+		flex-direction: column;
+		gap: 10px;
+    width: 80%;
+	}
+
+	.days {
+		display: flex;
+		height: 70px;
+		width: 100%;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
