@@ -109,7 +109,7 @@ async function checkWeather(place, requestType) {
 
     lat = currentData.coord.lat;
     lon = currentData.coord.lon;
-    const apiUrl3 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+    const apiUrl3 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
     const airResponse = await fetch(apiUrl3);
     airData = await handleFetchError(airResponse);
 
@@ -281,8 +281,4 @@ function findUser() {
     }
   });
 }
-
-}
-
-
 
