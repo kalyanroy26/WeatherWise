@@ -84,7 +84,7 @@ async function checkWeather(place, requestType) {
   if (requestType === 'coordinates') {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${place.lat}&lon=${place.lon}&appid=${apiKey}&units=metric`;
     const apiUrl2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${place.lat}&lon=${place.lon}&appid=${apiKey}&units=metric`;
-    const apiUrl3 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${place.lat}&lon=${place.lon}&appid=${apiKey}&units=metric`
+    const apiUrl3 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${place.lat}&lon=${place.lon}&appid=${apiKey}&units=metric`
     const currentResponse = await fetch(apiUrl);
     const forecastResponse = await fetch(apiUrl2);
     const airResponse = await fetch(apiUrl3);
