@@ -282,14 +282,6 @@ function findUser() {
   });
 }
 
-
-function checking(position) {
-  var place = position;
-  if (place.lat && place.lon) {
-    API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${data.lat}&lon=${data.lon}&appid=${key}&units=metric`;
-  } else {
-    API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${data}&appid=${key}&units=metric`;
-  }
 }
 
 
