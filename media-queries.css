@@ -111,7 +111,7 @@
 	.card-3 {
 		flex-direction: column;
 		gap: 10px;
-    width: 80%;
+    width: 100%;
 	}
 
 	.days {
